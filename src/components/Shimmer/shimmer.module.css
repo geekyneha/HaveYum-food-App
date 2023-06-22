@@ -1,0 +1,40 @@
+.shimmer-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 3rem;
+    
+  
+
+}
+.foodQuotesImage{
+    border-radius: 50%;
+   position: relative;
+   left: 40%;
+
+}
+.shimmer-card{
+
+   
+    width: 220px;
+   
+    margin: 0 10px;
+    padding: 0 10px;
+    background-color: #fff;
+    font-size: 12px;
+    padding: 1rem;
+}
+
+.shimmer-image{
+  width: 250px;
+  height: 177px;
+  background-color: #f0f0f0;
+}
+.shimmer-item,.shimmer-cousines,.shimmer-price{
+   
+    width: 250px;
+    height: 20px;
+    background-color: #f0f0f0;
+    margin: 10px 5px;
+    border-radius: 10px;
+}
