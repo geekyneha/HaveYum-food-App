@@ -1,0 +1,23 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+   margin:0 2rem;
+
+   
+   }
+  
+  
+   .nav-items > ul{
+       display: flex;
+      
+       
+   }
+   .nav-items > ul >li{
+       padding: 10px;
+       margin:   10px 40px;  
+       list-style: none;
+       cursor: pointer;
+       font-size: 1.1rem;
+      font-weight: 600;
+   }
+   
