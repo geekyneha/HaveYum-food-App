@@ -1,0 +1,31 @@
+/* Body */
+/* body{
+background: #FFF6F6;
+} */
+
+
+.res-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+.filter-restaurant{
+    padding: 3rem;
+    margin: 0 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+.filter-btn{
+
+    border: none;
+    background-color: #fff;
+    margin: 0 2rem;
+
+}
+.total-restaurant{
+    font-size: 1.5rem;
+    font-weight: 900;
+
+}
