@@ -1,7 +1,7 @@
 import React from 'react'
 import { TextField } from '@mui/material'
 import {Button} from '@mui/material'
-import style from './login.module.css'
+import * as style from './login.module.css'
 
 const Login = () => {
   return (

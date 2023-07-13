@@ -1,5 +1,5 @@
 import { LOGO_URL } from "../../utils/constants";
-import style from './navbar.module.css'
+import * as style from './navbar.module.css'
 import {MdSearch} from 'react-icons/md'
 import  {BiUserCircle} from 'react-icons/bi'
 import Register from '../pages/Registration/Register'
@@ -19,7 +19,7 @@ const Header = () => {
     <>
     <div className={style.header}>
       
-      <div className={style["logo-container"]} onClick={()=>navigate("/")}>
+      <div onClick={()=>navigate("/")}>
         <img src={logo} width={100}/>
       {/* <iframe src="https://giphy.com/embed/bsfUpZfjw8pBr2QKUg"  frameBorder="0" className={style.logo} ></iframe> */}
       </div>

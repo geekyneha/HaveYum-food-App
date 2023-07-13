@@ -1,10 +1,12 @@
 {
+  "homepage": "https://geekyneha.github.io/HaveYum-food-App",
   "name": "react-as",
   "version": "1.0.0",
   "description": "\"Deep React Learning\"",
-  "main": "App.js",
   "scripts": {
     "start": "parcel index.html",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "parcel build index.html",
     "test": "jest"
   },
@@ -18,9 +20,9 @@
   "bugs": {
     "url": "https://github.com/geekyneha/React-AS/issues"
   },
-  "homepage": "https://github.com/geekyneha/React-AS#readme",
   "devDependencies": {
     "buffer": "^5.7.1",
+    "gh-pages": "^5.0.0",
     "parcel": "^2.8.3",
     "process": "^0.11.10"
   },
@@ -30,6 +32,7 @@
     "@mui/icons-material": "^5.11.16",
     "@mui/material": "^5.13.5",
     "axios": "^1.4.0",
+    "build": "^0.1.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.9.0",

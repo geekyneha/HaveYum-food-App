@@ -1,5 +1,5 @@
 import { CDN_URL } from "../../utils/constants"
-import style from './restaurant.module.css'
+import * as style from './restaurant.module.css'
 import{AiFillStar} from "react-icons/ai"
 const RestaurantCard = (props) => {
     const { resData ,onClick} = props
@@ -11,7 +11,7 @@ const RestaurantCard = (props) => {
 
                 alt="restaurant" src={CDN_URL + resData.data.cloudinaryImageId} />
 
-            <h3 className={style["restaurant-name"]}>{name}</h3>
+            <h3>{name}</h3>
             <h4>{cuisines.join(", ")}</h4>
             <span className={style.avgRating} style={{backgroundColor:avgRating > 4 ? "green":"orange"}}><AiFillStar style={{color:"#fff"}} />{avgRating}</span>
             

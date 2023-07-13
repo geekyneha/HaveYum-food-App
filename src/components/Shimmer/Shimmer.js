@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./shimmer.module.css";
+import * as style from "./shimmer.module.css";
 import { foodQuotes } from "../../utils/constants";
 import { foodQuotesUrl } from "../../utils/constants";
 

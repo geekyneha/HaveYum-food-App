@@ -1,6 +1,6 @@
 import RestaurantCard from "../Restaurant/RestaurantCard";
 import { useEffect, useState } from "react";
-import style from './body.module.css'
+import * as style from './body.module.css'
 import Shimmer from "../Shimmer/Shimmer";
 import { useNavigate } from "react-router-dom";
 const Body = () => {

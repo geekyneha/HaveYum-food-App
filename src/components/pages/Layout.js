@@ -1,5 +1,5 @@
 import React from 'react'
-import style from './layout.module.css'
+import * as style from './layout.module.css'
 import Body from '../Body/Body'
  import NavBar from '../Header/NavBar.js'
 

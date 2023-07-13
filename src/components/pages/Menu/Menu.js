@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import style from "./menu.module.css";
+import * as style from "./menu.module.css";
 import axios from "axios";
 import { useEffect } from "react";
 import Shimmer from "../../Shimmer/Shimmer";
