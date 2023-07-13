@@ -2,10 +2,10 @@ import { CDN_URL } from "../../utils/constants"
 import style from './restaurant.module.css'
 import{AiFillStar} from "react-icons/ai"
 const RestaurantCard = (props) => {
-    const { resData } = props
+    const { resData ,onClick} = props
     const { name, cuisines, avgRating, costForTwo, deliveryTime } = resData.data
     return (
-        <div className={style["res-card"]}>
+        <div className={style["res-card"]} onClick={onClick} >
             <img
                 className={style["res-logo"]}
 

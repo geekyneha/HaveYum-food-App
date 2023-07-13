@@ -3,7 +3,9 @@
 background: #FFF6F6;
 } */
 
-
+.body{
+    margin: 0 10rem;
+}
 .res-container{
     display: flex;
     flex-wrap: wrap;

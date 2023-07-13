@@ -2,6 +2,9 @@ export const LOGO_URL =
   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQQ9W98Mg2_uVUCWTJY_WkT0adfjOEXCvHRQ&usqp=CAU";
 export const CDN_URL =
   "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/";
+export const MENU_API =
+  "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=19.0759837&lng=72.8776559&restaurantId=";
+
 export const foodQuotes = [
   "Life is butter with a side of corny jokes.",
   "Lettuce romaine calm and make food puns.",
@@ -41,5 +44,4 @@ export const foodQuotesUrl = [
   "https://i.pinimg.com/236x/2f/ec/6b/2fec6b552781cf813d5f508daa4f75d9.jpg",
   "https://i.pinimg.com/236x/5c/88/ff/5c88ff204d7c6316e6b565b7666c3e89.jpg",
   "https://i.pinimg.com/236x/72/e4/66/72e466d2512cb740b16d564aacc55b0e.jpg",
-  
 ];

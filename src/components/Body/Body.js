@@ -2,22 +2,24 @@ import RestaurantCard from "../Restaurant/RestaurantCard";
 import { useEffect, useState } from "react";
 import style from './body.module.css'
 import Shimmer from "../Shimmer/Shimmer";
+import { useNavigate } from "react-router-dom";
 const Body = () => {
 
    
     
-    const [listOfRestaurant,setListOfResaurant]= useState([]);
+    const [listOfRestaurant,setListOfRestaurant]= useState([]);
     const [FilteredRestaurant,setIsFilteredRestaurant]=useState([]);
     const [inputText,setInputText]=useState("");
-
+    const navigate= useNavigate();
 
 
      console.log("rerendered")
     
-
+     
+         
 
     useEffect(()=>{
-       fecthData()
+       fecthData();
     },[])
   
 
@@ -28,6 +30,7 @@ const Body = () => {
      
     }
 
+
     const fecthData= async()=>{
         const data =await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=19.2704628&lng=72.8709166&page_type=DESKTOP_WEB_LISTING")
 
@@ -35,12 +38,18 @@ const Body = () => {
 
         const json= await data.json();
         console.log(json.data.cards);
-        setListOfResaurant(json?.data?.cards[2]?.data?.data?.cards)
+        setListOfRestaurant(json?.data?.cards[2]?.data?.data?.cards)
        setIsFilteredRestaurant(json?.data?.cards[2]?.data?.data?.cards)
     }
 
+    const showMenu=(id)=>{
+        console.log("clicked")
+          navigate("restaurant/"+id)
+     
+         }
     
-    return (listOfRestaurant.length==0 ?
+    
+    return (listOfRestaurant.length===0 ?
         (
             <Shimmer />
         ):
@@ -85,7 +94,7 @@ const Body = () => {
             <div className={style["res-container"]}>
 
                 {
-                   FilteredRestaurant.map((restaurant) => <RestaurantCard key={restaurant.data.id} resData={restaurant} />)
+                   FilteredRestaurant.map((restaurant) => <RestaurantCard key={restaurant.data.id} resData={restaurant} onClick={()=>showMenu(restaurant.data.id)}/>)
                 }
         
             </div>
