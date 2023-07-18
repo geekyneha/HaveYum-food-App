@@ -30,7 +30,6 @@ HaveYum is a frontend project for a food app. It provides a user-friendly interf
 
 - `autoprefixer`: ^10.4.14
 - `buffer`: ^5.7.1
-- `gh-pages`: ^5.0.0
 - `parcel`: ^2.8.3
 - `postcss`: ^8.4.26
 - `tailwindcss`: ^3.3.3
